@@ -38,6 +38,7 @@ Navbar
   text-decoration: none;
   text-transform: capitalize;
   color: black;
+  transition: all 300ms linear;
 }
 .menu-icon {
   margin-right: 1rem;
@@ -366,4 +367,108 @@ User Opinion
   color: #3771c8;
   font-size: 1.5rem;
   font-weight: bold;
+}
+/* 
+====================
+Best Quality Hotels
+====================
+*/
+.best-hotels {
+  margin-bottom: 5rem;
+}
+.best-hotels-header {
+  margin: 3rem auto 2rem auto;
+  display: flex;
+  justify-content: space-between;
+}
+.best-hotels-text h1 {
+  text-transform: capitalize;
+  font-size: 36.4px;
+  margin-bottom: 1rem;
+}
+.best-hotels-text p {
+  font-size: 14.56px;
+  max-width: 372.19px;
+  color: #555555;
+  line-height: 1.5925rem;
+}
+.star {
+  margin-top: 1.5rem;
+  display: flex;
+  column-gap: 2.275rem;
+}
+#main-star {
+  border: 1px solid #222222;
+}
+.star a:hover {
+  border: 1px solid #222222;
+}
+.star a:hover ~ #main-star {
+  border: 1px solid #e8e8e8;
+}
+.star a {
+  text-decoration: none;
+  color: #222222;
+  text-transform: capitalize;
+  border: 1px solid #e8e8e8;
+  padding: 0.455rem 1.5925rem;
+  border-radius: 0.455rem;
+  transition: all 300ms linear;
+}
+.best-hotels-cards {
+  display: flex;
+  column-gap: 1.365rem;
+}
+.single-card {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0;
+}
+.single-card img {
+  max-width: 374.01px;
+}
+.single-card-info {
+  max-width: 374.01px;
+  border-bottom-right-radius: 0.91rem;
+  border-bottom-left-radius: 0.91rem;
+  border: 1px solid #e8e8e8;
+  border-top: none;
+  padding: 1rem;
+}
+.single-card-title {
+  font-weight: 600;
+  font-size: 1.1375rem;
+  margin-bottom: 0.5rem;
+}
+.single-card-text {
+  font-size: 0.79625rem;
+  color: #555555;
+  font-weight: 400;
+  margin-bottom: 1.535625rem;
+}
+.single-card-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.big-number {
+  font-size: 1.365rem;
+  font-weight: 600;
+  color: #3771c8;
+}
+.price {
+  text-transform: uppercase;
+  font-size: 0.91rem;
+  font-weight: 400;
+  color: #555555;
+}
+.single-card-bottom a {
+  text-decoration: none;
+  font-size: 0.79625rem;
+  font-weight: 600;
+  text-transform: capitalize;
+  background: #3771c8;
+  color: white;
+  padding: 0.3rem 0.8rem;
+  border-radius: 0.2rem;
 }
