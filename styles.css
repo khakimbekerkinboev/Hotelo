@@ -222,7 +222,9 @@ Facilities & Service
   padding-top: 3rem;
   padding-left: 1.19rem;
   padding-right: 1.19rem;
+  transition: all 300ms linear;
 }
+
 .card-icon {
   font-size: 3.185rem;
   position: relative;
@@ -252,4 +254,55 @@ Facilities & Service
   color: #666666;
   margin-bottom: 3rem;
   line-height: 25.48px;
+}
+/* 
+===========
+Hotels
+===========
+*/
+.hotels {
+  margin: 6rem auto;
+  display: flex;
+  column-gap: 54.6px;
+}
+.hotels-img img {
+  max-width: 35.7175rem;
+}
+.hotels-title {
+  font-size: 2.275rem;
+  max-width: 25rem;
+  font-weight: 600;
+  margin-bottom: 1.1375rem;
+}
+
+.hotels-text {
+  color: #555555;
+  font-size: 0.91rem;
+  line-height: 1.5925rem;
+  margin-bottom: 2.275rem;
+}
+.hotel-data {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 4rem;
+}
+.hotel-data h1 {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1.70625rem;
+  margin-bottom: 0.91rem;
+}
+.hotel-data p {
+  text-align: center;
+  text-transform: capitalize;
+  font-size: 0.91rem;
+}
+.hotels-btn {
+  text-decoration: none;
+  text-transform: capitalize;
+  background: #3771c8;
+  color: white;
+  font-size: 0.91rem;
+  padding: 0.91rem 1.82rem;
+  border-radius: 0.5rem;
 }
