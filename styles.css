@@ -535,6 +535,64 @@ Footer
 */
 .footer {
   margin-top: 5rem;
+  margin-bottom: 4rem;
   display: flex;
   padding: 0 5rem;
+  column-gap: 10rem;
+}
+.company-info p {
+  font-size: 0.91rem;
+  color: #555555;
+  max-width: 15rem;
+  margin: 1.365rem auto;
+  line-height: 1.365rem;
+}
+.social-links {
+  display: flex;
+  column-gap: 1.9rem;
+}
+.site-navigation {
+  display: flex;
+  column-gap: 10rem;
+}
+.site-navigation h1 {
+  font-size: 1.365rem;
+  font-weight: 400;
+  margin-bottom: 0.5rem;
+}
+.site-navigation a {
+  font-size: 0.91rem;
+  text-decoration: none;
+  color: #222222;
+  font-weight: 400;
+  text-transform: capitalize;
+  margin-bottom: 0;
+}
+.column-1 {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+}
+.column-2 {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+}
+.app-links {
+  display: flex;
+  flex-direction: column;
+}
+.app-links h1 {
+  font-size: 1.365rem;
+  font-weight: 400;
+  margin-bottom: 0.5rem;
+}
+.app-links a {
+  font-size: 0.91rem;
+  text-decoration: none;
+  color: #222222;
+  font-weight: 400;
+  text-transform: capitalize;
+  margin-bottom: 0;
+  row-gap: 2rem;
 }
