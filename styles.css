@@ -264,6 +264,7 @@ Hotels
   margin: 6rem auto;
   display: flex;
   column-gap: 54.6px;
+  margin-bottom: 4rem;
 }
 .hotels-img img {
   max-width: 35.7175rem;
@@ -305,4 +306,64 @@ Hotels
   font-size: 0.91rem;
   padding: 0.91rem 1.82rem;
   border-radius: 0.5rem;
+}
+.hotel-list {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 4rem;
+}
+.hotel-list img {
+  transform: scale(0.91);
+}
+/* 
+===========
+User Opinion
+===========
+*/
+.opinion {
+  display: flex;
+  margin-bottom: 5rem;
+  border-bottom-left-radius: 0.6825rem;
+  border-top-left-radius: 0.6825rem;
+}
+.user-img img {
+  max-width: 585px;
+  height: 100%;
+  object-fit: cover;
+  border-bottom-left-radius: 0.6825rem;
+  border-top-left-radius: 0.6825rem;
+}
+.opinion-details {
+  background: #f9d15c;
+  border-top-right-radius: 0.6825rem;
+  border-bottom-right-radius: 0.6825rem;
+  padding-left: 3.5rem;
+  padding-right: 3.5rem;
+  padding-top: 2.5rem;
+  text-align: center;
+}
+.opinion-details img {
+  width: 3.64rem;
+}
+.opinion-details h4 {
+  margin: 0.8rem auto 1rem auto;
+  font-weight: 400;
+  font-size: 0.91rem;
+  color: #555555;
+}
+.opinion-details h1 {
+  font-weight: 300;
+  font-size: 1.70625rem;
+  color: #222222;
+  font-style: italic;
+}
+.details-line {
+  color: rgba(55, 113, 200, 0.28);
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+.details-line span {
+  color: #3771c8;
+  font-size: 1.5rem;
+  font-weight: bold;
 }
