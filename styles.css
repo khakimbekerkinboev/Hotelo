@@ -78,7 +78,7 @@ Header
   justify-content: space-between;
 }
 .info-text {
-  max-width: 646px;
+  max-width: 620px;
 }
 .info-text h1 {
   font-size: 54.6px;
@@ -471,4 +471,70 @@ Best Quality Hotels
   color: white;
   padding: 0.3rem 0.8rem;
   border-radius: 0.2rem;
+}
+/* 
+===========
+Subscribe
+===========
+*/
+.subscribe {
+  display: flex;
+  column-gap: 0;
+}
+.subscribe-text {
+  background: #eaeceb;
+  border-top-left-radius: 0.91rem;
+  border-bottom-left-radius: 0.91rem;
+  padding: 3.4125rem 4.20875rem;
+}
+.subscribe-img img {
+  max-width: 348.6665rem;
+  height: 100%;
+}
+.subscribe-text h1 {
+  font-weight: 600;
+  font-size: 2.275rem;
+  margin-bottom: 1.1375rem;
+}
+.subscribe-text p {
+  font-weight: 400;
+  font-size: 0.91rem;
+  max-width: 70%;
+  margin-bottom: 5.2325rem;
+}
+.email-box {
+  max-width: 27.64125rem;
+  max-height: 3.185rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: white;
+  padding: 0.79625rem 0 0.79625rem 1.47875rem;
+  padding-right: auto;
+  border-radius: 2.84375rem;
+}
+.email {
+  font-size: 0.79625rem;
+
+  color: #555555;
+}
+.subscribe a {
+  text-decoration: none;
+  background: #3771c8;
+  font-size: 0.91rem;
+  color: white;
+  padding: 0.91rem 1.82rem;
+  border-radius: 2.84375rem;
+  text-transform: capitalize;
+  font-weight: 600;
+}
+/* 
+===========
+Footer
+===========
+*/
+.footer {
+  margin-top: 5rem;
+  display: flex;
+  padding: 0 5rem;
 }
