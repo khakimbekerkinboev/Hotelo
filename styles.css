@@ -81,7 +81,7 @@ Header
   max-width: 620px;
 }
 .info-text h1 {
-  font-size: 54.6px;
+  font-size: 3.4125rem;
   font-weight: 600;
 }
 .info-text p {
@@ -118,7 +118,7 @@ Header
   justify-content: left;
   padding-left: 1.5rem;
   align-items: center;
-  font-size: 21.84px;
+  font-size: 1.365rem;
   font-weight: 400;
   text-transform: capitalize;
   background: #fafafa;
@@ -126,7 +126,7 @@ Header
 }
 .box span {
   color: #999999;
-  margin-right: 0.6rem;
+  margin-right: 0.4rem;
 }
 .location {
   display: flex;
@@ -595,4 +595,53 @@ Footer
   text-transform: capitalize;
   margin-bottom: 0;
   row-gap: 2rem;
+}
+/* 
+=============
+Small Screen
+=============
+*/
+@media screen and (max-width: 480px) {
+  .center {
+    max-width: 95%;
+  }
+  .list {
+    display: none;
+  }
+  .navbar {
+    margin: auto 0.5rem;
+  }
+  .header {
+    margin: 2.5rem auto;
+  }
+  .header-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .info-text h1 {
+    font-size: 2.2rem;
+    font-weight: bold;
+    line-height: 120%;
+  }
+
+  .info-text {
+    text-align: center;
+  }
+
+  .info-text p {
+    font-size: 0.85rem;
+    margin: 1rem auto;
+  }
+  .info-card {
+    transform: scale(0.9);
+  }
+  .box {
+    font-size: 1rem;
+    padding-left: 1.2rem;
+    font-weight: 600;
+  }
+  .search-btn {
+    padding: 0.9rem;
+  }
 }
