@@ -178,17 +178,17 @@ Facilities & Service
 =====================
 */
 .service-header {
-  margin: 3rem auto;
+  margin: 3rem auto 1.5rem;
   display: flex;
   justify-content: space-between;
 }
 .service-text h1 {
   text-transform: capitalize;
-  font-size: 36.4px;
+  font-size: 2.275rem;
   margin-bottom: 1rem;
 }
 .service-text p {
-  font-size: 14.56px;
+  font-size: 0.91rem;
 }
 .view-link {
   align-self: flex-end;
@@ -223,7 +223,6 @@ Facilities & Service
   padding-top: 3rem;
   padding-left: 1.19rem;
   padding-right: 1.19rem;
-  transition: all 300ms linear;
 }
 
 .card-icon {
@@ -247,11 +246,11 @@ Facilities & Service
 .card h1 {
   text-transform: capitalize;
   font-weight: 400;
-  font-size: 18.2px;
+  font-size: 1.1375rem;
   margin: 2rem auto 1rem auto;
 }
 .card p {
-  font-size: 14.56px;
+  font-size: 0.91rem;
   color: #666666;
   margin-bottom: 3rem;
   line-height: 25.48px;
@@ -383,7 +382,7 @@ Best Quality Hotels
 }
 .best-hotels-text h1 {
   text-transform: capitalize;
-  font-size: 36.4px;
+  font-size: 2.275rem;
   margin-bottom: 1rem;
 }
 .best-hotels-text p {
@@ -515,7 +514,6 @@ Subscribe
 }
 .email {
   font-size: 0.79625rem;
-
   color: #555555;
 }
 .subscribe a {
@@ -675,6 +673,204 @@ Small Screen
   }
   .service-header {
     flex-direction: column;
+    max-width: 100%;
+  }
+
+  .service-text {
     text-align: center;
+  }
+  .service-text h1 {
+    font-size: 1.5rem;
+  }
+  .service-text p {
+    max-width: 80%;
+    margin: 0 auto;
+    font-size: 0.85rem;
+  }
+  .view-link {
+    margin: 1.5rem auto 1rem;
+  }
+  .service-cards {
+    flex-direction: column;
+    row-gap: 1.5rem;
+  }
+  .card {
+    max-width: 90%;
+  }
+  .hotels {
+    flex-direction: column;
+    margin-top: 4rem;
+    row-gap: 1rem;
+  }
+  .hotels-img {
+    text-align: center;
+  }
+  .hotels-img img {
+    max-width: 90%;
+  }
+  .hotels-info {
+    text-align: center;
+    margin: 0 auto;
+    max-width: 90%;
+  }
+
+  .hotels-title {
+    text-align: center;
+    font-size: 1.7rem;
+  }
+  .hotels-text {
+    text-align: center;
+    margin: 0 auto;
+    max-width: 90%;
+    margin-bottom: 1rem;
+  }
+  .hotel-data {
+    justify-content: center;
+    transform: scale(0.8);
+    column-gap: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  .hotel-data h1 {
+    margin-bottom: 0.5rem;
+  }
+
+  .hotel-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+  }
+  .hotel-list span {
+    text-align: center;
+  }
+  .hotels-btn {
+    font-size: 0.8rem;
+    padding: 0.8rem 1.5rem;
+  }
+  .opinion {
+    flex-direction: column;
+  }
+  .user-img {
+    text-align: center;
+  }
+  .user-img img {
+    max-width: 90%;
+    border-radius: 0.6825rem;
+  }
+  .opinion-details {
+    margin: 0 auto;
+    width: 90%;
+    border-radius: 0.6825rem;
+    padding-bottom: 1rem;
+  }
+  .opinion-details h1 {
+    font-size: 0.95rem;
+  }
+  .best-hotels-header {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    max-width: 90%;
+  }
+  .best-hotels-text h1 {
+    font-size: 1.5rem;
+  }
+
+  .star {
+    column-gap: 0.8rem;
+  }
+  .star a {
+    font-size: 0.7rem;
+    padding: 0.3rem 1rem;
+  }
+  .best-hotels-cards {
+    flex-direction: column;
+    row-gap: 1rem;
+  }
+  .single-card {
+    max-width: 90%;
+    margin: 0 auto;
+  }
+  .single-card img {
+    max-width: 100%;
+    object-fit: cover;
+  }
+  .subscribe {
+    justify-content: center;
+  }
+  .subscribe-img {
+    display: none;
+  }
+  .subscribe-text {
+    border-radius: 0.91rem;
+    max-width: 90%;
+    padding: 1.5rem 0;
+    display: flex;
+    flex-direction: column;
+  }
+  .subscribe-text h1 {
+    font-size: 1.5rem;
+    text-align: center;
+    max-width: 90%;
+    margin: 0 auto 1.5rem;
+  }
+  .subscribe-text p {
+    max-width: 90%;
+    text-align: center;
+    font-size: 0.8rem;
+    margin: 0 auto 3rem;
+  }
+  .email-box {
+    width: 80%;
+    margin: 0 auto;
+    max-height: 2.5rem;
+  }
+  .email {
+    font-size: 0.75rem;
+  }
+  .subscribe-btn {
+    display: flex;
+    align-items: center;
+  }
+  .subscribe a {
+    font-size: 0.75rem;
+    padding: 0.725rem 1.5rem;
+  }
+  .footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+      "a a a"
+      "b b c";
+
+    padding: unset;
+    column-gap: 3rem;
+    max-width: 90%;
+    margin: 0 auto 7rem;
+  }
+  .site-navigation {
+    column-gap: 3rem;
+  }
+  .company-info {
+    grid-area: a;
+  }
+  .site-navigation {
+    grid-area: b;
+  }
+  .app-links {
+    grid-area: c;
+  }
+  .company-info {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .footer-logo {
+    max-width: 25%;
+    margin: 0 auto;
+  }
+  .social-links {
+    margin: 0 auto;
   }
 }
