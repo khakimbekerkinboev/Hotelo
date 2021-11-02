@@ -5,13 +5,13 @@
 }
 body {
   font-family: "Open Sans", sans-serif;
-  font-size: 16px;
+  font-size: 1rem;
 }
 
 .center {
   max-width: 1170px;
   height: 100%;
-  margin: 40px auto;
+  margin: 2.5rem auto;
 }
 /* 
 ===========
@@ -29,7 +29,7 @@ Navbar
 }
 .list {
   margin: 0.5rem 3rem 0.5rem 0;
-  font-size: 14.56px;
+  font-size: 1rem;
 }
 .list a:hover {
   color: #f9d15c;
@@ -49,7 +49,7 @@ Navbar
   text-decoration: none;
   text-transform: capitalize;
   color: black;
-  font-size: 12.74px;
+  font-size: 0.9rem;
   font-weight: 700;
   padding: 10px 24px;
   border: 1px solid grey;
@@ -73,7 +73,7 @@ Header
 }
 .header-info {
   display: grid;
-  grid-template-columns: 1fr 455px;
+  grid-template-columns: 1fr 430px;
   grid-template-rows: 1fr;
   justify-content: space-between;
 }
@@ -89,7 +89,7 @@ Header
   font-weight: 400;
   color: #555555;
   width: 80%;
-  margin-top: 1rem;
+  margin-top: 0.8rem;
 }
 .info-card {
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
@@ -100,45 +100,102 @@ Header
   grid-template-areas:
     "a b"
     "c c";
-  column-gap: 2rem;
-  row-gap: 3rem;
+  column-gap: 1.365rem;
+  row-gap: 2.275rem;
   padding: 2rem;
 }
+
 .date {
   grid-area: a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 0.3rem;
+  height: 3.185rem;
+  background: #fafafa;
+  border-radius: 0.455rem;
+  padding-left: 1.3rem;
+  padding-right: 0.4rem;
+}
+.date select {
+  width: 100%;
+  height: 3.185rem;
+  border: transparent;
+  font-size: 1.15rem;
+  text-transform: capitalize;
+  background: #fafafa;
+  border-top-right-radius: 0.455rem;
+  border-bottom-right-radius: 0.455rem;
+  outline: none;
 }
 .guests {
   grid-area: b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 0.3rem;
+  height: 3.185rem;
+  background: #fafafa;
+  padding-left: 1.3rem;
+  padding-right: 0.4rem;
+  border-radius: 0.455rem;
+}
+.guests select {
+  width: 100%;
+  height: 3.185rem;
+  border: transparent;
+  font-size: 1.15rem;
+  text-transform: capitalize;
+  background: #fafafa;
+  border-top-right-radius: 0.455rem;
+  border-bottom-right-radius: 0.455rem;
+  outline: none;
 }
 .location {
   grid-area: c;
-}
-.box {
   display: flex;
-  justify-content: left;
-  padding-left: 1.5rem;
   align-items: center;
-  font-size: 1.365rem;
-  font-weight: 400;
-  text-transform: capitalize;
+  column-gap: 0.3rem;
+  height: 3.185rem;
   background: #fafafa;
-  border-radius: 0.5rem;
+  border-radius: 0.455rem;
+  padding-left: 1.3rem;
 }
-.box span {
+.location select {
+  width: 100%;
+  height: 3.185rem;
+  font-size: 1.15rem;
+  text-transform: capitalize;
+  border: transparent;
+  background: #fafafa;
+  border-top-right-radius: 0.455rem;
+  border-bottom-right-radius: 0.455rem;
+  outline: none;
+}
+.info-card i {
   color: #999999;
-  margin-right: 0.4rem;
+  width: 1.02375rem;
+  height: 1.1375rem;
 }
-.location {
+.info-search {
+  background: #3771c8;
+  border: none;
+  border-radius: 0.455rem;
+  margin-right: 0;
+  cursor: pointer;
+}
+.info-search i {
+  color: white;
+  height: 3.185rem;
+  width: 3.185rem;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 }
-.search-btn {
-  color: white;
-  background: #3771c8;
-  border-radius: 0.5rem;
-  padding: 1.296875rem;
+.fa-search:before {
+  font-size: 1.08rem;
 }
+
 .header-img {
   margin: 4rem auto;
   display: grid;
@@ -177,6 +234,9 @@ Header
 Facilities & Service
 =====================
 */
+.service {
+  margin-top: 6rem;
+}
 .service-header {
   margin: 3rem auto 1.5rem;
   display: flex;
@@ -261,7 +321,7 @@ Hotels
 ===========
 */
 .hotels {
-  margin: 6rem auto;
+  margin: 7rem auto;
   display: flex;
   column-gap: 54.6px;
   margin-bottom: 4rem;
@@ -422,6 +482,11 @@ Best Quality Hotels
   display: flex;
   flex-direction: column;
   row-gap: 0;
+  transition: all 300ms linear;
+  border-radius: 0.91rem;
+}
+.single-card:hover {
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
 .single-card img {
   max-width: 374.01px;
@@ -635,15 +700,58 @@ Small Screen
   .info-card {
     width: 90%;
     margin: 0 auto;
+    row-gap: 1.9rem;
+    padding: 1.4rem;
   }
-  .box {
-    font-size: 0.9rem;
-    padding-left: 0.9rem;
-    font-weight: 600;
-  }
+
   .search-btn {
     padding: 0.9rem;
   }
+  .date {
+    padding-left: 0.5rem;
+    height: 2.9rem;
+  }
+  .date select {
+    font-size: 1rem;
+    height: 2.9rem;
+  }
+
+  .info-card i {
+    width: 0.8rem;
+    height: 0.8rem;
+  }
+  .guests {
+    padding-left: 0.5rem;
+    height: 2.9rem;
+  }
+  .guests select {
+    font-size: 1rem;
+    height: 2.9rem;
+  }
+  .location {
+    padding-left: 0.5rem;
+    height: 2.9rem;
+  }
+  .location select {
+    font-size: 1rem;
+    height: 2.9rem;
+  }
+  .info-search {
+    background: #3771c8;
+    border: none;
+    border-radius: 0.455rem;
+    margin-right: 0;
+    cursor: pointer;
+  }
+  .info-search i {
+    color: white;
+    height: 2.9rem;
+    width: 2.9rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
   .header-img {
     max-width: 90%;
     margin: 2rem auto 0rem;

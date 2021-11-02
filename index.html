@@ -41,26 +41,51 @@
             </p>
           </div>
 
-          <div class="info-card">
-            <div class="box date">
-              <p>
-                <span><i class="fas fa-calendar-week"></i></span> jun 10-14
-              </p>
+          <form action="" class="info-card">
+            <!--single box-->
+            <div class="date">
+              <label for=""><i class="fas fa-calendar-week"></i></label>
+              <select type="text">
+                <option value="Jun 10-14">Jun 10-14</option>
+                <option value="Jun 15-19">Jun 15-19</option>
+                <option value="Jun 20-24">Jun 20-24</option>
+                <option value="Jun 25-29">Jun 25-29</option>
+              </select>
             </div>
-            <div class="box guests">
-              <p>
-                <span><i class="fas fa-user"></i></span> 2 guests
-              </p>
-            </div>
+            <!--end of single box-->
 
-            <div class="box location">
-              <p>
-                <span><i class="fas fa-map-marker-alt"></i></span>united states
-              </p>
-              <a><i class="search-btn fas fa-search"></i></a>
+            <!--single box-->
+            <div class="guests">
+              <label for=""><i class="fas fa-user"></i></label>
+              <select type="text">
+                <option value="2 Guests">2 Guests</option>
+                <option value="3 Guest">3 Guests</option>
+                <option value="4 Guest">4 Guests</option>
+                <option value="5 Guest">5 Guests</option>
+                <option value="5 Guest">6 Guests</option>
+              </select>
             </div>
-          </div>
+            <!--end of single box-->
+
+            <!--single box-->
+            <div class="location">
+              <label for=""><i class="fas fa-map-marker-alt"></i></label>
+              <select type="text">
+                <option value="United States">United States</option>
+                <option value="Canada">Canada</option>
+                <option value="Australia">Australia</option>
+                <option value="Europe">Europe</option>
+                <option value="Asia">Asia</option>
+                <option value="Africa">Africa</option>
+              </select>
+              <button type="submit" class="info-search">
+                <i class="fas fa-search"></i>
+              </button>
+            </div>
+            <!--end of single box-->
+          </form>
         </div>
+
         <div class="header-img">
           <h1 class="main-text">wagsaffe NSV, australia</h1>
           <img
