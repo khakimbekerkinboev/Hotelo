@@ -13,6 +13,15 @@ body {
   height: 100%;
   margin: 2.5rem auto;
 }
+.btn {
+  transition: all 300ms linear;
+}
+.btn:hover {
+  background: white;
+  outline: 1px solid #3771c8;
+  color: #3771c8;
+}
+
 /* 
 ===========
 Navbar
@@ -31,14 +40,15 @@ Navbar
   margin: 0.5rem 3rem 0.5rem 0;
   font-size: 1rem;
 }
-.list a:hover {
-  color: #f9d15c;
-}
+
 .list a {
   text-decoration: none;
   text-transform: capitalize;
+  color: #555555;
+  transition: all 0.3s linear;
+}
+.list a:hover {
   color: black;
-  transition: all 300ms linear;
 }
 .menu-icon {
   margin-right: 1rem;
@@ -58,7 +68,7 @@ Navbar
   cursor: pointer;
 }
 .sign-in a:hover {
-  background: #f9d15c;
+  background: #3771c8;
   border-color: transparent;
   color: white;
 }
@@ -212,6 +222,7 @@ Header
   grid-area: a;
   max-width: 873.84px;
 }
+
 .img-2 {
   grid-area: b;
   max-width: 281.5px;
@@ -257,10 +268,11 @@ Facilities & Service
   text-align: center;
   margin-bottom: 0.2rem;
 }
+
 .view-link a {
   text-decoration: none;
   text-transform: capitalize;
-  font-size: 14.56px;
+  font-size: 0.91rem;
   color: #3771c8;
   width: 100%;
 }
@@ -277,12 +289,16 @@ Facilities & Service
   column-gap: 1rem;
 }
 .card {
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.04);
   border-radius: 0.5rem;
   text-align: center;
   padding-top: 3rem;
   padding-left: 1.19rem;
   padding-right: 1.19rem;
+  transition: all 300ms linear;
+}
+.card:hover {
+  box-shadow: 0px 30px 40px rgba(0, 0, 0, 0.05);
 }
 
 .card-icon {
@@ -485,9 +501,7 @@ Best Quality Hotels
   transition: all 300ms linear;
   border-radius: 0.91rem;
 }
-.single-card:hover {
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-}
+
 .single-card img {
   max-width: 374.01px;
 }
@@ -578,19 +592,23 @@ Subscribe
   border-radius: 2.84375rem;
 }
 .email {
-  font-size: 0.79625rem;
-  color: #555555;
+  font-size: 1rem;
+  border: transparent;
+  outline: none;
 }
-.subscribe a {
-  text-decoration: none;
+.subscribe-btn {
   background: #3771c8;
-  font-size: 0.91rem;
+  border: none;
   color: white;
-  padding: 0.91rem 1.82rem;
-  border-radius: 2.84375rem;
   text-transform: capitalize;
+  font-family: "Open Sans", sans-serif;
+  padding: 0.9399rem 1.82rem;
+  border-radius: 2.84375rem;
   font-weight: 600;
+  font-size: 0.91rem;
+  cursor: pointer;
 }
+
 /* 
 ===========
 Footer
@@ -626,10 +644,14 @@ Footer
 .site-navigation a {
   font-size: 0.91rem;
   text-decoration: none;
-  color: #222222;
+  color: #555555;
   font-weight: 400;
   text-transform: capitalize;
   margin-bottom: 0;
+  transition: all 0.3s linear;
+}
+.site-navigation a:hover {
+  color: black;
 }
 .column-1 {
   display: flex;
@@ -653,11 +675,15 @@ Footer
 .app-links a {
   font-size: 0.91rem;
   text-decoration: none;
-  color: #222222;
+  color: #555555;
   font-weight: 400;
   text-transform: capitalize;
   margin-bottom: 0;
   row-gap: 2rem;
+  transition: all 0.3s linear;
+}
+.app-links a:hover {
+  color: black;
 }
 /* 
 =============
@@ -938,21 +964,21 @@ Small Screen
   .subscribe-btn {
     display: flex;
     align-items: center;
-  }
-  .subscribe a {
-    font-size: 0.75rem;
     padding: 0.725rem 1.5rem;
+    font-size: 0.75rem;
   }
+
   .footer {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     grid-template-areas:
-      "a a a"
-      "b b c";
+      "a a"
+      "b c";
 
     padding: unset;
     column-gap: 3rem;
+    justify-content: center;
     max-width: 90%;
     margin: 0 auto;
   }
